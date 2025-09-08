@@ -1,6 +1,8 @@
 import sys
+
 if sys.platform != "win32":
     import pathlib
+
     try:
         pathlib.WindowsPath = pathlib.PosixPath
     except Exception:
